@@ -5,6 +5,7 @@ class DockingStation
     @bike
   end
   def dock(bike)
+    fail 'No space' if @bike
     @bike = bike
   end
 
